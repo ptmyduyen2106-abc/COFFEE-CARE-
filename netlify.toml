@@ -1,0 +1,7 @@
+[build]
+  functions = netlifyfunctions
+
+[[redirects]]
+  from = .netlifyfunctions
+  to = .netlifyfunctionssplat
+  status = 200
