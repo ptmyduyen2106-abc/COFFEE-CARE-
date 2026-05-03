@@ -369,7 +369,7 @@
         // GỌI API AN TOÀN QUA NETLIFY FUNCTION (Cho phần nút "Nhận tư vấn AI")
         async function fetchAIAdvice(promptText) {
             try {
-                const res = await fetch('/.netlify/functions/chat', {
+                const res = await fetch('/.netlify/functions/ask-gemini', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ prompt: promptText })
