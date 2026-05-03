@@ -1,7 +1,2 @@
-[build]
-  functions = netlifyfunctions
-
-[[redirects]]
-  from = .netlifyfunctions
-  to = .netlifyfunctionssplat
-  status = 200
+[functions]
+  directory = "netlify/functions"
