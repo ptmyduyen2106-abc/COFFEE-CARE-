@@ -3,7 +3,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 exports.handler = async (event) => {
   // 1. Đổi GEMINI_API_KEY thành COFFEE_CARE (vì hôm trước trên Netlify bạn đặt tên biến này là COFFEE_CARE)
   const genAI = new GoogleGenerativeAI(process.env.COFFEE_CARE);
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-001" });
   
   try {
     const { prompt } = JSON.parse(event.body);
