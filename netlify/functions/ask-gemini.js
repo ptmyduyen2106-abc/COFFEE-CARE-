@@ -2,7 +2,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 exports.handler = async (event) => {
   const genAI = new GoogleGenerativeAI(process.env.COFFEE_CARE);
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
   
   try {
     const { prompt } = JSON.parse(event.body);
